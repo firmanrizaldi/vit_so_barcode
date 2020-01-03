@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <template id="vit_so_barcode" inherit_id="sale.report_saleorder_document">
+            <xpath expr="//h2" position="inside">
+                <div class="col-xs-3 pull-right">
+                    <img t-attf-src ="/report/barcode/?type=QR&amp;value=/report/html/sale.report_saleorder/#{doc.id}&amp;width=100&amp;height=100"/>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>
